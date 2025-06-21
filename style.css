@@ -1,0 +1,107 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main-container{
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    display:flex;
+    border-radius: 30px;
+    text-align: center;
+}
+.Login{
+    width: 50%;
+    height: 400px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+.log-cont-animation {
+    animation-name: log-cont-animation;
+    animation-duration: 2s;
+}
+@keyframes log-cont-animation {
+    100% {
+        transform: translateX(-50%) scaleX(0);
+      opacity: 1;
+      transform-origin: left center;
+      transform: translateX(80%) scaleX(0);
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+      z-index: 0;
+    }
+}
+.reg-cont-login {
+    animation-name: reg-cont-login;
+    animation-duration: 2s;
+}
+@keyframes reg-cont-login {
+    100%{ 
+       transform: translateX(-90%) scaleX(0);/* brings it into the screen */
+       z-index: 0;
+       transition: transform 1s ease, opacity 1s ease;
+       background-color: aliceblue;
+       transform-origin: right center;
+    }
+}
+.Register{
+    width: 50%;
+    height: 400px;
+}
+.input-box {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: none;
+}
+.input-box:focus {
+    border-width: 2px;
+}
+.btn{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 25px;
+}
+.btn-l{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 15px;
+}
+.div {
+    display: none;
+}
+.input-box-login {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: none;
+}
+.input-box-login:focus {
+    border-width: 2px;
+}
+.btn-login{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 25px;
+}
+.btn-register{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 15px;
+}
+.h1-89 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
