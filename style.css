@@ -1,0 +1,136 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.main-container{
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    display:flex;
+    border-radius: 30px;
+    text-align: center;
+}
+.Login{
+    width: 50%;
+    height: 400px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+.log-cont-animation {
+    animation-name: log-cont-animation;
+    animation-duration: 2s;
+}
+@keyframes log-cont-animation {
+    100% {
+        transform: translateX(-50%) scaleX(0);
+      opacity: 1;
+      transform-origin: left center;
+      transform: translateX(80%) scaleX(0);
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+      z-index: 0;
+    }
+}
+.reg-cont-login {
+    animation-name: reg-cont-login;
+    animation-duration: 2s;
+}
+@keyframes reg-cont-login {
+    100%{ 
+       transform: translateX(-90%) scaleX(0);/* brings it into the screen */
+       z-index: 0;
+       transition: transform 1s ease, opacity 1s ease;
+       background-color: aliceblue;
+       transform-origin: right center;
+    }
+}
+.glass-alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px 50px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+      color: #fff;
+      text-align: center;
+      display: none;
+      z-index: 9999;
+      font-size: 20px;
+      color: black;
+      font-weight: bolder;
+    }
+    .glass-alert.show {
+      display: block;
+    }
+
+.Register{
+    width: 50%;
+    height: 400px;
+}
+.input-box {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: none;
+}
+.input-box:focus {
+    border-width: 2px;
+}
+.btn{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 25px;
+}
+.btn-l{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 15px;
+}
+.div {
+    display: none;
+}
+.input-box-login {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: none;
+}
+.input-box-login:focus {
+    border-width: 2px;
+}
+.btn-login{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 25px;
+}
+.btn-register{
+    width: 50%;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 15px;
+}
+.h1-89 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
